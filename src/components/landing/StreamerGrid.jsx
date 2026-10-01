@@ -1,4 +1,5 @@
 import { formatCompact } from '../../utils/ui.js'
+import { LogoMark } from '../Logo.jsx'
 
 function initials(name = '') {
   return name
@@ -15,7 +16,10 @@ export default function StreamerGrid({ streamers }) {
       <div className="container-page">
         <div className="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
           <div className="max-w-xl">
-            <span className="eyebrow">Talento de la agencia</span>
+            <span className="eyebrow">
+              <LogoMark tone="dark" className="h-4 w-4" alt="" />
+              Talento de la agencia
+            </span>
             <h2 className="section-title mt-6">
               Creadores que ya <span className="text-brand-300">viven de sus lives</span>
             </h2>

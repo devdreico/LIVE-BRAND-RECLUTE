@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { LogoMark } from '../Logo.jsx'
 
 const links = [
   { href: '#beneficios', label: 'Beneficios' },
@@ -25,11 +26,9 @@ export default function Navbar({ onOpenPanel }) {
     >
       <nav className="container-page flex h-20 items-center justify-between">
         <a href="#" className="group flex items-center gap-3">
-          <span className="relative grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-brand-500 to-glow shadow-glow-sm">
-            <span className="absolute inset-0 rounded-xl bg-gradient-to-br from-brand-400 to-glow opacity-0 blur-md transition group-hover:opacity-100" />
-            <svg viewBox="0 0 24 24" className="relative h-5 w-5 text-white" fill="currentColor">
-              <path d="M13.5 3v10.2a3.3 3.3 0 1 1-2.4-3.18V6.6c-.6.1-1.2.3-1.7.6A5.6 5.6 0 0 0 6.5 11a5.5 5.5 0 0 0 11 0V6.4A6.5 6.5 0 0 1 13.5 3Z" />
-            </svg>
+          <span className="relative grid h-11 w-11 place-items-center rounded-xl border border-white/10 bg-ink-800/70 shadow-glow-sm transition group-hover:border-brand-400/50">
+            <span className="absolute inset-0 rounded-xl bg-gradient-to-br from-brand-500 to-glow opacity-0 blur-md transition group-hover:opacity-40" />
+            <LogoMark tone="dark" className="relative h-7 w-7 transition group-hover:scale-110" />
           </span>
           <span className="font-display text-lg font-bold tracking-tight">
             LIVE<span className="text-brand-300">BRAND</span>

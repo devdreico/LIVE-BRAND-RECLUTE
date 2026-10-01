@@ -1,4 +1,5 @@
 import { formatCompact } from '../../utils/ui.js'
+import { LogoMark } from '../Logo.jsx'
 
 export default function StatsBar({ stats }) {
   const items = [
@@ -30,9 +31,17 @@ export default function StatsBar({ stats }) {
         <div className="relative overflow-hidden rounded-3xl border border-brand-400/25 bg-gradient-to-br from-ink-800 via-ink-700/60 to-ink-800 px-6 py-14 shadow-card sm:px-12">
           <div className="pointer-events-none absolute -left-16 -top-16 h-56 w-56 rounded-full bg-brand-500/30 blur-[100px]" />
           <div className="pointer-events-none absolute -bottom-20 -right-10 h-64 w-64 rounded-full bg-glow/25 blur-[110px]" />
+          <LogoMark
+            tone="dark"
+            className="pointer-events-none absolute right-6 top-6 h-24 w-24 opacity-[0.07] sm:h-32 sm:w-32"
+            alt=""
+          />
 
           <div className="relative text-center">
-            <span className="eyebrow">Métricas en vivo</span>
+            <span className="eyebrow">
+              <LogoMark tone="dark" className="h-4 w-4" alt="" />
+              Métricas en vivo
+            </span>
             <h2 className="section-title mt-6">Los números de nuestra comunidad</h2>
             <p className="mx-auto mt-4 max-w-xl text-sm text-white/55">
               Actualizados con cada postulación que entra a la convocatoria de Live Brand.

@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { LogoMark } from '../Logo.jsx'
 
 const initialForm = {
   name: '',
@@ -60,10 +61,15 @@ export default function ApplyForm({ onSubmit }) {
   if (submitted) {
     return (
       <div className="card animate-fade-up p-10 text-center">
-        <div className="mx-auto grid h-16 w-16 place-items-center rounded-full bg-gradient-to-br from-brand-500 to-glow shadow-glow">
-          <svg viewBox="0 0 24 24" className="h-8 w-8 text-white" fill="none" stroke="currentColor" strokeWidth="2.5">
-            <path d="m5 13 4 4L19 7" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
+        <div className="relative mx-auto h-16 w-16">
+          <div className="grid h-16 w-16 place-items-center rounded-2xl border border-brand-400/40 bg-ink-900 shadow-glow">
+            <LogoMark tone="dark" className="h-10 w-10 drop-shadow-[0_0_10px_rgba(217,70,239,0.6)]" />
+          </div>
+          <span className="absolute -bottom-1.5 -right-1.5 grid h-7 w-7 place-items-center rounded-full bg-emerald-500 text-white ring-4 ring-ink-800">
+            <svg viewBox="0 0 24 24" className="h-3.5 w-3.5" fill="none" stroke="currentColor" strokeWidth="3.5">
+              <path d="m5 13 4 4L19 7" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </span>
         </div>
         <h3 className="mt-6 font-display text-2xl font-bold text-white">¡Postulación enviada!</h3>
         <p className="mx-auto mt-3 max-w-md text-sm text-white/60">
@@ -91,7 +97,10 @@ export default function ApplyForm({ onSubmit }) {
       <div className="container-page relative">
         <div className="grid gap-12 lg:grid-cols-[1fr_1.4fr] lg:gap-16">
           <div>
-            <span className="eyebrow">Postulación</span>
+            <span className="eyebrow">
+              <LogoMark tone="dark" className="h-4 w-4" alt="" />
+              Postulación
+            </span>
             <h2 className="section-title mt-6">
               Únete al <span className="text-brand-300">squad</span> de Live Brand
             </h2>
@@ -119,13 +128,18 @@ export default function ApplyForm({ onSubmit }) {
             </ul>
 
             <div className="mt-9 rounded-2xl border border-brand-400/25 bg-brand-500/10 p-5">
-              <p className="text-sm text-white/70">
-                <span className="font-semibold text-brand-200">¿Ya eres parte?</span> Entra al{' '}
-                <a href="#/panel" className="font-semibold text-glow underline underline-offset-4">
-                  panel interno
-                </a>{' '}
-                para gestionar postulantes.
-              </p>
+              <div className="flex items-start gap-3">
+                <span className="grid h-9 w-9 flex-none place-items-center rounded-lg border border-brand-400/30 bg-ink-900/70">
+                  <LogoMark tone="dark" className="h-5 w-5" />
+                </span>
+                <p className="text-sm text-white/70">
+                  <span className="font-semibold text-brand-200">¿Ya eres parte?</span> Entra al{' '}
+                  <a href="#/panel" className="font-semibold text-glow underline underline-offset-4">
+                    panel interno
+                  </a>{' '}
+                  para gestionar postulantes.
+                </p>
+              </div>
             </div>
           </div>
 

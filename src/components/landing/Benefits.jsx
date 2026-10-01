@@ -1,3 +1,5 @@
+import { LogoMark } from '../Logo.jsx'
+
 const benefits = [
   {
     title: 'Gestión de equipos y wars',
@@ -52,7 +54,10 @@ export default function Benefits() {
     <section id="beneficios" className="relative scroll-mt-24 py-24">
       <div className="container-page">
         <div className="mx-auto max-w-2xl text-center">
-          <span className="eyebrow">Por qué unirte</span>
+          <span className="eyebrow">
+            <LogoMark tone="dark" className="h-4 w-4" alt="" />
+            Por qué unirte
+          </span>
           <h2 className="section-title mt-6">
             Una agencia detrás de tu <span className="text-brand-300">live</span>
           </h2>

@@ -1,16 +1,19 @@
+import Logo, { LogoMark } from '../Logo.jsx'
+
 export default function Footer({ onOpenPanel }) {
   return (
-    <footer className="relative border-t border-white/10 bg-ink-950/70 py-14">
-      <div className="container-page flex flex-col items-center justify-between gap-8 sm:flex-row">
+    <footer className="relative overflow-hidden border-t border-white/10 bg-ink-950/70 py-14">
+      <LogoMark
+        tone="dark"
+        className="pointer-events-none absolute -bottom-16 -right-10 h-64 w-64 opacity-[0.06]"
+        alt=""
+      />
+
+      <div className="container-page relative flex flex-col items-center justify-between gap-8 sm:flex-row">
         <div className="text-center sm:text-left">
-          <div className="flex items-center justify-center gap-3 sm:justify-start">
-            <span className="grid h-9 w-9 place-items-center rounded-lg bg-gradient-to-br from-brand-500 to-glow text-sm font-bold text-white">
-              LB
-            </span>
-            <span className="font-display text-lg font-bold">
-              LIVE<span className="text-brand-300">BRAND</span>
-            </span>
-          </div>
+          <a href="#" className="inline-flex items-center justify-center sm:justify-start">
+            <Logo tone="dark" />
+          </a>
           <p className="mt-3 max-w-sm text-sm text-white/45">
             Agencia de crecimiento digital para creadores de lives en TikTok.
           </p>
@@ -23,7 +26,10 @@ export default function Footer({ onOpenPanel }) {
             <a href="#postular" className="transition hover:text-brand-200">Postular</a>
             <button onClick={onOpenPanel} className="transition hover:text-brand-200">Panel interno</button>
           </nav>
-          <p className="text-xs text-white/30">© {new Date().getFullYear()} Live Brand. Todos los derechos reservados.</p>
+          <div className="flex items-center gap-2 text-xs text-white/30">
+            <LogoMark tone="dark" className="h-4 w-4 opacity-70" alt="" />
+            <span>© {new Date().getFullYear()} Live Brand. Todos los derechos reservados.</span>
+          </div>
         </div>
       </div>
     </footer>

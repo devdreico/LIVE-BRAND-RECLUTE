@@ -1,3 +1,5 @@
+import { LogoMark } from '../Logo.jsx'
+
 const navItems = [
   { id: 'resumen', label: 'Resumen' },
   { id: 'postulantes', label: 'Postulantes' },
@@ -8,8 +10,8 @@ export default function PanelLayout({ activeTab, onTabChange, onExit, children }
     <div className="min-h-screen">
       <aside className="fixed inset-y-0 left-0 z-40 hidden w-64 flex-col border-r border-white/10 bg-ink-950/80 p-6 backdrop-blur-xl lg:flex">
         <div className="flex items-center gap-3">
-          <span className="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-brand-500 to-glow font-display text-sm font-bold text-white shadow-glow-sm">
-            LB
+          <span className="grid h-11 w-11 place-items-center rounded-xl border border-brand-400/30 bg-ink-800/70 shadow-glow-sm">
+            <LogoMark tone="dark" className="h-7 w-7" />
           </span>
           <div>
             <div className="font-display text-sm font-bold leading-tight">
@@ -52,8 +54,8 @@ export default function PanelLayout({ activeTab, onTabChange, onExit, children }
         <header className="sticky top-0 z-30 border-b border-white/10 bg-ink-900/85 backdrop-blur-xl">
           <div className="flex items-center justify-between gap-4 px-4 py-4 sm:px-8">
             <div className="flex items-center gap-3">
-              <span className="grid h-9 w-9 place-items-center rounded-lg bg-gradient-to-br from-brand-500 to-glow font-display text-xs font-bold text-white lg:hidden">
-                LB
+              <span className="grid h-9 w-9 place-items-center rounded-lg border border-brand-400/30 bg-ink-800/70 lg:hidden">
+                <LogoMark tone="dark" className="h-5 w-5" />
               </span>
               <div>
                 <h1 className="font-display text-base font-bold text-white sm:text-lg">

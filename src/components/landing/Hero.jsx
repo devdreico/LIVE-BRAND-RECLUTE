@@ -1,3 +1,5 @@
+import { LogoMark } from '../Logo.jsx'
+
 const highlights = [
   '+320 creadores',
   '9.4M vistas/mes',
@@ -12,6 +14,13 @@ export default function Hero({ onApply }) {
       <div className="pointer-events-none absolute right-0 top-1/3 h-72 w-72 rounded-full bg-glow/20 blur-[120px]" />
 
       <div className="container-page relative text-center">
+        <div className="mx-auto mb-8 flex animate-fade-up items-center justify-center">
+          <span className="relative grid h-20 w-20 place-items-center rounded-3xl border border-brand-400/30 bg-ink-800/70 shadow-glow backdrop-blur">
+            <span className="absolute inset-0 rounded-3xl bg-gradient-to-br from-brand-500/40 to-glow/30 blur-xl" />
+            <LogoMark tone="dark" className="relative h-12 w-12 drop-shadow-[0_0_12px_rgba(217,70,239,0.55)]" />
+          </span>
+        </div>
+
         <span className="eyebrow animate-fade-up">
           <span className="h-2 w-2 animate-pulse-glow rounded-full bg-glow" />
           Reclutamiento abierto · Temporada 2026
