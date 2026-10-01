@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Live Brand | Redirigiendo…</title>
+    <meta name="robots" content="noindex" />
+    <script>
+      // SPA con ruteo por hash: cualquier ruta desconocida vuelve al inicio.
+      var hash = window.location.hash || ''
+      window.location.replace('./' + hash)
+    </script>
+    <meta http-equiv="refresh" content="0; url=./" />
+  </head>
+  <body>
+    <p><a href="./">Volver a la página de inicio de Live Brand</a></p>
+  </body>
+</html>

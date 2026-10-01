@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./index.html', './src/**/*.{js,jsx}'],
+  content: ['./index.html', './src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
       colors: {
@@ -25,7 +25,7 @@ export default {
         glow: '#D946EF',
       },
       fontFamily: {
-        display: ['Sora', 'system-ui', 'sans-serif'],
+        display: ['"Sora Variable"', 'Sora', 'system-ui', 'sans-serif'],
         body: ['Poppins', 'system-ui', 'sans-serif'],
       },
       boxShadow: {
