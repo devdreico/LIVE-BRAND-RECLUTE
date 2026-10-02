@@ -24,7 +24,7 @@ npm test         # tests (npm run test:watch para watch mode)
 
 ## Estructura
 
-- `#/` — Landing pública: hero, beneficios, cómo funciona, requisitos, streamers, métricas, FAQ, testimonios y formulario de inscripción gratuita en 2 pasos.
+- `#/` — Landing pública: hero animado (canvas de partículas), beneficios, plan de reclutamiento con tiempos, top de referentes de Colombia, requisitos, bloque de cupos, FAQ y formulario de inscripción gratuita en 2 pasos.
 - `#/panel` — Panel interno (enlace "Panel interno" en el navbar o footer): KPIs, distribución de estados, listado de postulantes con búsqueda, filtros y orden persistidos, detalle con acciones masivas, deshacer, exportar CSV y backup/restore.
 - Cualquier hash desconocido muestra una 404 con enlace al inicio.
 
@@ -34,7 +34,7 @@ npm test         # tests (npm run test:watch para watch mode)
 - Estados de postulante: pendiente → contactado → aprobado / rechazado, con historial y deshacer.
 - KPIs: total de postulantes, aprobados, conversión, pendientes, seguidores y horas de live acumuladas.
 - Exportar CSV, backup/restore en JSON y restaurar datos de demostración.
-- Seed de datos de ejemplo en `src/data/seedApplicants.ts` y streamers en `src/data/mockStreamers.ts`.
+- Seed de datos de ejemplo para el panel en `src/data/seedApplicants.ts` y catálogo de referentes en `src/data/topCreators.ts`.
 
 ## Despliegue
 

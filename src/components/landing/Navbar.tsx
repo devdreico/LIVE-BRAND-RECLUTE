@@ -2,10 +2,10 @@ import { useEffect, useState } from 'react'
 import { LogoMark } from '../Logo'
 
 const links = [
-  { href: '#como-funciona', label: 'Cómo funciona' },
+  { href: '#como-funciona', label: 'Plan' },
   { href: '#beneficios', label: 'Beneficios' },
-  { href: '#streamers', label: 'Streamers' },
-  { href: '#metricas', label: 'Métricas' },
+  { href: '#referentes', label: 'Top' },
+  { href: '#requisitos', label: 'Requisitos' },
   { href: '#faq', label: 'Preguntas' },
   { href: '#postular', label: 'Postular' },
 ]

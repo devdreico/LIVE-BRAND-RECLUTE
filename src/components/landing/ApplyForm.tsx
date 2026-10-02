@@ -57,8 +57,8 @@ const perks = [
 
 const nextSteps = [
   'Envías tu perfil de TikTok en 2 minutos',
-  'Te contactamos en menos de 48 h con un diagnóstico gratis',
-  'Entras a las clases y arrancas tu plan de crecimiento',
+  'En menos de 48 h (máx. 3 días) te contacta un pilar de la agencia',
+  'Entras a las clases gratuitas y arrancas tu plan de crecimiento',
 ]
 
 const normalizeHandle = (value: string): string =>
@@ -242,8 +242,8 @@ export default function ApplyForm({ onSubmit, takenHandles = [] }: ApplyFormProp
               Listo, <span className="text-brand-300">{submitted.name}</span>. Tu perfil de{' '}
               <span className="text-brand-300">{submitted.handle}</span> quedó en revisión con estado{' '}
               <span className="text-amber-300">Pendiente</span>. Te escribimos a{' '}
-              <span className="text-brand-300">{submitted.email}</span> en menos de 48 h con tu
-              diagnóstico gratis.
+              <span className="text-brand-300">{submitted.email}</span> en menos de 48 h (máximo
+              3 días) un pilar de la agencia, con tu diagnóstico gratis.
             </p>
 
             <ol className="mx-auto mt-8 grid max-w-md gap-3 text-left">
@@ -258,8 +258,8 @@ export default function ApplyForm({ onSubmit, takenHandles = [] }: ApplyFormProp
             </ol>
 
             <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-              <a href="#streamers" className="btn-primary">
-                Conoce a los creadores
+              <a href="#referentes" className="btn-primary">
+                Ver los top de Colombia
               </a>
               <button onClick={() => setSubmitted(null)} className="btn-ghost">
                 Inscribir otro perfil
@@ -487,8 +487,8 @@ export default function ApplyForm({ onSubmit, takenHandles = [] }: ApplyFormProp
             )}
 
             <p className="mt-6 text-xs font-medium text-brand-200">
-              Inscripción gratuita y sin compromiso · Cupos limitados por categoría · Respondemos en
-              menos de 48 h.
+              Inscripción gratuita y sin compromiso · Cupos limitados por categoría · Te contactamos
+              en menos de 48 h (máximo 3 días).
             </p>
 
             {sendError && (

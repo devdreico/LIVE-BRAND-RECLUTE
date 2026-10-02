@@ -34,17 +34,6 @@ export type NewApplicantData = Omit<
   'id' | 'status' | 'createdAt' | 'updatedAt' | 'history'
 >
 
-export interface Streamer {
-  id: string
-  name: string
-  handle: string
-  followers: number
-  category: string
-  hoursLive: number
-  bio: string
-  gradient: string
-}
-
 export interface StatusMeta {
   label: string
   classes: string

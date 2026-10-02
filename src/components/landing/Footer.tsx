@@ -19,20 +19,21 @@ export default function Footer({ onOpenPanel }: FooterProps) {
             <Logo tone="dark" />
           </a>
           <p className="mt-3 max-w-sm text-sm text-white/60">
-            Agencia de crecimiento digital para creadores de lives en TikTok.
+            Agencia oficial de TikTok LIVE · LATAM. Crece tus lives con clases y asesorías
+            gratuitas.
           </p>
         </div>
 
         <div className="flex flex-col items-center gap-4 sm:items-end">
-            <nav className="flex flex-wrap items-center justify-center gap-6 text-sm text-white/55">
-              <a href="#como-funciona" className="transition hover:text-brand-200">Cómo funciona</a>
-              <a href="#beneficios" className="transition hover:text-brand-200">Beneficios</a>
-              <a href="#streamers" className="transition hover:text-brand-200">Streamers</a>
-              <a href="#requisitos" className="transition hover:text-brand-200">Requisitos</a>
-              <a href="#faq" className="transition hover:text-brand-200">Preguntas</a>
-              <a href="#postular" className="transition hover:text-brand-200">Postular</a>
-              <button onClick={onOpenPanel} className="transition hover:text-brand-200">Panel interno</button>
-            </nav>
+          <nav className="flex flex-wrap items-center justify-center gap-6 text-sm text-white/55">
+            <a href="#como-funciona" className="transition hover:text-brand-200">Plan</a>
+            <a href="#beneficios" className="transition hover:text-brand-200">Beneficios</a>
+            <a href="#referentes" className="transition hover:text-brand-200">Top</a>
+            <a href="#requisitos" className="transition hover:text-brand-200">Requisitos</a>
+            <a href="#faq" className="transition hover:text-brand-200">Preguntas</a>
+            <a href="#postular" className="transition hover:text-brand-200">Postular</a>
+            <button onClick={onOpenPanel} className="transition hover:text-brand-200">Panel interno</button>
+          </nav>
           <div className="flex items-center gap-2 text-xs text-white/55">
             <LogoMark tone="dark" className="h-4 w-4 opacity-70" alt="" />
             <span>© {new Date().getFullYear()} Live Brand. Todos los derechos reservados.</span>

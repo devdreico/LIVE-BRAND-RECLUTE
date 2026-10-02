@@ -18,7 +18,7 @@ export default function Faq() {
           </h2>
           <p className="mt-5 text-white/60">
             Lo que más nos preguntan antes de postular. Si te falta algo, escríbenos y te respondemos
-            en menos de 48 horas.
+            en menos de 48 h (máximo 3 días).
           </p>
         </div>
 

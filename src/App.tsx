@@ -4,16 +4,14 @@ import Navbar from './components/landing/Navbar'
 import Hero from './components/landing/Hero'
 import Benefits from './components/landing/Benefits'
 import HowItWorks from './components/landing/HowItWorks'
-import StreamerGrid from './components/landing/StreamerGrid'
-import Testimonials from './components/landing/Testimonials'
-import StatsBar from './components/landing/StatsBar'
+import TopCreators from './components/landing/TopCreators'
+import ScarcityCta from './components/landing/ScarcityCta'
 import Requirements from './components/landing/Requirements'
 import Faq from './components/landing/Faq'
 import ApplyForm from './components/landing/ApplyForm'
 import Footer from './components/landing/Footer'
 import NotFound from './components/NotFound'
 import { useApplicants } from './hooks/useApplicants'
-import { mockStreamers } from './data/mockStreamers'
 
 const PanelLayout = lazy(() => import('./components/panel/PanelLayout'))
 const KpiCards = lazy(() => import('./components/panel/KpiCards'))
@@ -125,10 +123,9 @@ export default function App() {
         <Hero onApply={goToApply} />
         <Benefits />
         <HowItWorks />
-        <StreamerGrid streamers={mockStreamers} />
-        <Testimonials />
-        <StatsBar stats={stats} />
+        <TopCreators />
         <Requirements />
+        <ScarcityCta />
         <Faq />
         <ApplyForm onSubmit={addApplicant} takenHandles={applicants.map((a) => a.handle)} />
       </main>

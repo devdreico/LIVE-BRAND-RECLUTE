@@ -2,24 +2,28 @@ import { LogoMark } from '../Logo'
 
 const steps = [
   {
-    title: 'Postula en 2 minutos',
+    time: 'Minuto 0 · 2 minutos',
+    title: 'Postula gratis, sin CV',
     description:
-      'Completa el formulario con tu @, tu categoría y tus métricas actuales. Sin CV y sin carta de presentación.',
+      'Completa el formulario con tu @, tu categoría y tus métricas actuales. Sin carta de presentación y sin pagar nada.',
   },
   {
-    title: 'Llamada de diagnóstico en menos de 48 h',
+    time: 'Días 1 a 3 · Contacto de un pilar',
+    title: 'Te contacta un pilar de la agencia',
     description:
-      'Revisamos tu perfil a mano y conversamos sobre tus metas, tu horario y tu comunidad en una llamada corta.',
+      'Un pilar de Live Brand revisa tu perfil a mano y te escribe en menos de 48 h (máximo 3 días) por WhatsApp o email.',
   },
   {
-    title: 'Onboarding y plan de crecimiento',
+    time: 'Semana 1 · Diagnóstico + clases',
+    title: 'Llamada de diagnóstico y primeras clases',
     description:
-      'Definimos formatos, horarios y metas medibles, y arrancas con clases gratuitas y asesoría directa de profesionales de TikTok para subir tus diamantes desde la semana 1.',
+      'Conversamos sobre tus metas y arrancas con clases gratuitas de profesionales de TikTok y de crecimiento digital.',
   },
   {
-    title: 'Primer live con equipo y estructura',
+    time: 'Semanas 2 a 4 · Plan en vivo',
+    title: 'Primer live con equipo y plan medible',
     description:
-      'Te presentamos a tu equipo, armamos tu guerra y te acompañamos en la transmisión con producción lista.',
+      'Sales con formato, horario y metas de vistas y diamantes, con equipo para wars y soporte durante la transmisión.',
   },
 ]
 
@@ -32,14 +36,14 @@ export default function HowItWorks() {
         <div className="mx-auto max-w-2xl text-center">
           <span className="eyebrow">
             <LogoMark tone="dark" className="h-4 w-4" alt="" />
-            Proceso
+            Plan de reclutamiento
           </span>
           <h2 className="section-title mt-6">
             Cómo <span className="text-brand-300">funciona</span>
           </h2>
           <p className="mt-5 text-white/60">
-            Cuatro pasos desde que postulas hasta que transmites con estructura. Sin letra chica y
-            sin costos para ti.
+            Un plan con tiempos claros: desde que postulas hasta que transmites con estructura.
+            Sin letra chica y sin costos para ti.
           </p>
         </div>
 
@@ -78,7 +82,10 @@ export default function HowItWorks() {
                 </span>
               </div>
 
-              <h3 className="mt-5 font-display text-lg font-semibold leading-snug text-white">
+              <p className="mt-4 font-display text-[11px] font-semibold uppercase tracking-[0.14em] text-glow">
+                {step.time}
+              </p>
+              <h3 className="mt-2 font-display text-lg font-semibold leading-snug text-white">
                 {step.title}
               </h3>
               <p className="mt-3 text-sm leading-relaxed text-white/60">{step.description}</p>
@@ -91,7 +98,7 @@ export default function HowItWorks() {
             Empezar mi postulación
           </a>
           <p className="text-xs text-white/60">
-            Cupos limitados por categoría este mes · Respuesta en menos de 48 h.
+            Cupos limitados por categoría este mes · Respuesta en menos de 48 h (máximo 3 días).
           </p>
         </div>
       </div>

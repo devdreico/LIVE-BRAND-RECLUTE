@@ -32,7 +32,7 @@ export const faqItems: FaqItem[] = [
   {
     question: '¿Cuánto demoran en responderme?',
     answer:
-      'Respondemos todas las postulaciones en menos de 48 horas. Si tu perfil avanza, coordinamos la llamada de diagnóstico en los días siguientes.',
+      'Te contactamos en menos de 48 horas hábiles, con un tope máximo de 3 días. Quien te escribe es un pilar de Live Brand (un referente de la agencia), no un bot: revisa tu perfil a mano antes de escribirte.',
   },
   {
     question: '¿Qué categorías aceptan?',
